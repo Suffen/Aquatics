@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>RL Aquatics</title>
+		<meta charset ="UTF-8">
+		<meta http-equiv="X-UA-Compatiable" content="IE=edge">
+		<meta name = "viewport" content="width = device-width, initial-scale=1">
+
+		<title>Red Lored Aquatics</title>
+
+		<link rel="stylesheet" type="text/css" href=""https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"">
+
+		<style>
+			.jumbotron{
+    			background-color:#2E2D88;
+    			color:white;
+			}
+		</style>
+
+
+
+
 	</head>
 
 	<body>
-		<p align = center>Welcome to Red Lored Aquatics!</p>
-		<p> As we are growing, please enjoy the Compatiability tool and the Water Change calculator!<p>
+		<div class="container">
+			<div class="page-header">
+				<h1 align = "center" >Welcome to Red Lored Aquatics!</h1>
+			</div>
+			
+			<div class = "jumbotron">
+				<p align = "center"> As we are growing, please enjoy the Compatiability tool and the Water Change calculator!</p>
 
-		<p> Species compatiability check</p>
+				<button type="button" class = "btn btn-default" role = "button">Compatiability Check</button>
+				<button type="button" class = "btn btn-default" role = "button">Water Change Calculator</button>
+
+			</div>
+		</div>
+			
+			<p> Species compatiability check</p>
 
 			<select id= "WaterType" onchange= "watertype()">
 				<option value="fw">Freshwater</option>
 				<option value="sw">Saltwater</option>
 			</select>
+
+	
 			
 
 
-		<script type="text/javascript">
+		
 
-
-
-
-		</script>
-
-
-
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	</body
 
