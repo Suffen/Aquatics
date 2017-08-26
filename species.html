@@ -21,6 +21,7 @@
 	</head>
 
 	<body>
+		
 		<div class="container">
 
 			<div class="page-header">
@@ -36,12 +37,38 @@
 
 			</div>
 		</div>
-			
+		<script type="text/jquery">
+			$('#WaterType').on('change', function() {
+  				// hide all .sub in advance and filter the one to show by changed value
+  				$('.sub').hide().filter('#' + $(this).val()).show();	
+			});
+			.sub { /* hide all .sub in advance */
+ 					 display: none;
+				};
+				</script>
+
 			<p align = "center"> Species Compatiability Check </p>
 
-				<select id = "WaterType" onchange = "watertype()">
+				<select id = "WaterType">/*need to align to center*/
 					<option value = "fw"> Freshwater </option>
 					<option value = "sw"> Saltwater </option>
+				</select>
+				<br>
+				<select id="fw" class="sub">
+   					<option value="fw1"> fwTest1 </option>
+    				<option value="fw2"> fwTest2 </option>
+				</select>
+				<select id="fw" class="sub">
+   					<option value="fw1"> fwTest1 </option>
+    				<option value="fw2"> fwTest2 </option>
+				</select>
+				<select id="sw" class="sub">
+   					<option value="sw1"> swTest1 </option>
+    				<option value="sw2"> swTest2 </option>
+				</select>
+				<select id="sw" class="sub">
+   					<option value="sw1"> swTest1 </option>
+    				<option value="sw2"> swTest2 </option>
 				</select>
 			
 
